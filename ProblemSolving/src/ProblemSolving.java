@@ -33,17 +33,17 @@ public class ProblemSolving {
 
 				if (wordWantedAsReversed.charAt(i) == ')') {
 					if (!st.isEmpty()) {
-					char[] word = wordWantedAsReversed.toCharArray();
-					reverseWord(word, st.peek() + 1, i - 1);
-					st.pop();
-					wordWantedAsReversed = String.copyValueOf(word);
+						char[] word = wordWantedAsReversed.toCharArray();
+						reverseWord(word, st.peek() + 1, i - 1);
+						st.pop();
+						wordWantedAsReversed = String.copyValueOf(word);
 					}
 
 				}
 			}
 
 			return wordWantedAsReversed;
-		}else {
+		} else {
 			return "";
 		}
 	}
